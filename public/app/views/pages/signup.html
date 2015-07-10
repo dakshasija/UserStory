@@ -1,0 +1,114 @@
+<div class="container" ng-controller="UserCreateController  as user"> 
+<!-- <div class="container"> -->
+	<!-- <div class="container" > -->
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+	
+<h1>Signup</h1>
+		<form method="post" class="form-sigin">
+Name:<input type="text" class ="form-control" name="name" ng-model="user.userData.name">
+	
+Username:<input type="text" class ="form-control" name="username" ng-model="user.userData.username">
+Password:<input type="password" class ="form-control" name="password" ng-model="user.userData.password">
+
+    <button type="submit" class="btn btn-danger" ng-click="user.signupUser()">Signup</button>
+ 
+</form>
+</div>
+
+ </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" ng-controller="UserCreateController as user">
+	
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+<h1>Signup</h1>
+
+<form method="post"  class="form-sigin" ng-submit="user.signupUser">
+
+
+Name:<input type="text"  class="form-control" name="name" ng-model="user.userData.name">
+Username:<input type="text" name="username" class="form-control" ng-model="user.userData.username">
+Password:<input type="password" name="password" class="form-control" ng-model="user.userData.password">
+
+<button type="submit" class="btn btn-danger">Signup</button>
+
+</form>
+ -->
+
+
+
+<!-- </div>
+
+
+	</div>
+</div> -->
+
+<!-- 
+
+1(11) 2(12)
+3(21) 4(22)
+
+                  2(11) 4(12)
+                   1(21) 3(22) 
+
+(21)3(11)  (11)1(12)   11-12    11-21
+(22)4(21)  (12)2(22)   12-22    12-11 
+
+                       21-11    21-22 
+                       22-21    22-12 
+1  2  3    7  4  1 
+4  5  6    8  5  2
+7  8  9    9  6  3
+
+1 2 3      4 1  11=21
+4 5 6      5 2  12=
+           6 3 
+
+
+11-13    11-31
+12-23    12-21
+13-33    13-11
+
+21-12    21-32
+22-22    22-22 
+23-32    23-12
+
+31-11    31-33
+32-21    32-23
+33-31    33-13
+l=1;
+for(i=1;i<=m;i++)  //1  
+{
+k=n;              //2
+	
+for(j=1;j<=n;j++)      11-31 12-21 13-11
+{                     21-32 22-22 23-12 
+a[i][j]=b[k][l];      31-33 32-23 33-13
+k- -;
+}
+l++;
+}
+
+
+
+1 2
+3 4
+
+3 1
+4 2
+
+
+
+
+-->
